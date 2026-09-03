@@ -1,5 +1,8 @@
 # SAFAR — Official Website & Interactive Telemetry Bench
 
+> [!NOTE]
+> **Development Note:** This repository was published after the initial development phase. The GitHub commit history therefore does not represent the complete development timeline.
+
 Welcome to the official web portal and interactive simulation benchmark for **SAFAR** (Modular Road-Safety Intelligence for Existing Vehicles).
 
 ## 🚀 Live Preview / Local Hosting
