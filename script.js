@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
       mainNav.style.top = '100%';
       mainNav.style.left = '0';
       mainNav.style.width = '100%';
-      mainNav.style.background = 'rgba(6, 9, 14, 0.98)';
+      mainNav.style.background = '#ffffff';
       mainNav.style.padding = '24px';
-      mainNav.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
-      mainNav.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.8)';
+      mainNav.style.borderBottom = '2.5px solid #0f172a';
+      mainNav.style.boxShadow = '0 10px 24px rgba(0, 0, 0, 0.12)';
     });
   }
 
