@@ -1,39 +1,45 @@
-/* SAFAR — Obsidian Cyber-Telemetry Design System (Theme A) */
+/* SAFAR — Hand-Made Yellow & White Chart Paper + Blueprint Grid Design System */
 :root {
-  --bg-base: #07080a;
-  --bg-surface: #0c0f14;
-  --bg-surface-raised: #11161f;
-  --bg-surface-hover: #17202c;
-  --bg-card: rgba(14, 19, 27, 0.85);
-  
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-medium: rgba(255, 255, 255, 0.16);
-  --border-accent: rgba(16, 185, 129, 0.45);
-  --border-cyan: rgba(6, 182, 212, 0.4);
+  /* Warm Yellow & White Chart Paper Backgrounds */
+  --bg-base: #fbf7ee;            /* Warm engineering chart paper sheet */
+  --bg-surface: #ffffff;         /* Crisp white chart card */
+  --bg-surface-raised: #ffffff;  /* White technical drafting sheet */
+  --bg-surface-hover: #fefce8;   /* Soft highlighter yellow hover */
+  --bg-card: #ffffff;            /* Pure white index/chart card */
 
-  --brand-green: #10b981;
-  --brand-green-glow: rgba(16, 185, 129, 0.28);
-  --brand-cyan: #06b6d4;
-  --brand-cyan-glow: rgba(6, 182, 212, 0.24);
-  --brand-yellow: #f59e0b;
-  --brand-red: #ef4444;
+  /* Technical Blueprint Ink & Borders */
+  --border-subtle: rgba(15, 23, 42, 0.12);
+  --border-medium: rgba(15, 23, 42, 0.22);
+  --border-accent: #0284c7;      /* Technical blueprint cyan ink */
+  --border-cyan: #2563eb;        /* Deep technical drafting blue */
+  --border-blueprint: #1d4ed8;   /* Precision blueprint line ink */
 
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --text-dark: #07080a;
+  /* Highlighters & Marker Accents */
+  --brand-green: #15803d;        /* Green verification stamp */
+  --brand-green-glow: rgba(21, 128, 61, 0.15);
+  --brand-cyan: #0284c7;         /* Blueprint line cyan */
+  --brand-cyan-glow: rgba(2, 132, 199, 0.15);
+  --brand-yellow: #ca8a04;       /* Drafting amber */
+  --brand-red: #dc2626;          /* Red review marker */
+  --brand-blueprint: #1d4ed8;    /* Precision blueprint blue */
+
+  /* Drafting Ink Typography */
+  --text-main: #0f172a;          /* Deep drafting ink black */
+  --text-muted: #334155;         /* Technical lead pencil slate */
+  --text-dim: #64748b;           /* Dimension notation slate */
+  --text-dark: #020617;          /* Pitch black ink */
 
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 
-  --radius-xs: 4px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
 
-  --shadow-card: 0 12px 40px -4px rgba(0, 0, 0, 0.65);
-  --shadow-glow: 0 0 35px rgba(16, 185, 129, 0.18);
+  --shadow-card: 0 4px 16px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  --shadow-glow: 0 0 20px rgba(2, 132, 199, 0.15);
 }
 
 *, *::before, *::after {
@@ -56,6 +62,15 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--bg-base);
+  /* Millimeter & Centimeter Engineering Blueprint Grid */
+  background-image: 
+    linear-gradient(rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+  background-position: -1px -1px;
+  color: var(--text-main);
 }
 
 /* Typography & Global Utilities */
@@ -2095,4 +2110,416 @@ code {
   .oompa-specs-grid { grid-template-columns: 1fr; }
   .team-cards-grid { grid-template-columns: 1fr; }
   .five-pillars-grid { grid-template-columns: 1fr; }
+}
+
+
+
+/* ==========================================================================
+   HAND-MADE YELLOW & WHITE CHART PAPER + BLUEPRINT GRID THEME OVERRIDES
+   ========================================================================== */
+
+/* Typography & Headings in Technical Drafting Ink */
+h1, h2, h3, h4, h5, h6,
+.title-primary, .title-secondary, .section-title-wrap h2 {
+  color: var(--text-main) !important;
+}
+
+.lead-paragraph, .hero-lead {
+  color: var(--text-muted) !important;
+}
+
+/* Hero Section: Technical Blueprint Drafting Look */
+.hero-canvas-bg {
+  opacity: 0.25;
+}
+
+.hero-headline {
+  background: linear-gradient(135deg, #0f172a 20%, #1e40af 70%, #0284c7 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.hero-subheadline {
+  color: #1e3a8a !important;
+}
+
+.eyebrow-chip {
+  background: #fef08a !important;
+  border: 1px solid #eab308 !important;
+  color: #854d0e !important;
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(202, 138, 4, 0.2);
+}
+
+.eyebrow-state {
+  color: #15803d !important;
+}
+
+/* Header & Navigation: White/Parchment Drafting Bar */
+.site-header {
+  background: rgba(251, 247, 238, 0.94) !important;
+  border-bottom: 2px solid rgba(15, 23, 42, 0.12) !important;
+  backdrop-filter: blur(14px);
+}
+
+.brand-title {
+  color: #0f172a !important;
+}
+
+.brand-tag {
+  color: #0284c7 !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #334155 !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #1d4ed8 !important;
+  background: #fef9c3 !important;
+  border-radius: var(--radius-xs);
+}
+
+.nav-gh-btn {
+  border-color: #0f172a !important;
+  color: #0f172a !important;
+  background: #ffffff !important;
+}
+
+.nav-gh-btn:hover {
+  background: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* All Cards Styled as Crisp White Chart Paper Sheets */
+.card,
+.story-card,
+.problem-card,
+.module-spec-card,
+.achievement-card,
+.timeline-card,
+.team-profile-card,
+.pillar-card,
+.oompa-showcase-box,
+.expansion-card,
+.business-card,
+.insight-box,
+.architecture-board,
+.verification-stats-box,
+.pipeline-tracker,
+.business-equation-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.15) !important;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.08), 0 1px 4px rgba(15, 23, 42, 0.04) !important;
+  position: relative;
+}
+
+/* Blueprint Section Separator Bands */
+.bg-slate {
+  background-color: rgba(254, 252, 243, 0.85) !important;
+  border-top: 2px dashed rgba(37, 99, 235, 0.2) !important;
+  border-bottom: 2px dashed rgba(37, 99, 235, 0.2) !important;
+}
+
+/* OOMPA Showcase on White Chart Paper */
+.oompa-showcase-box {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(15, 23, 42, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
+}
+
+.oompa-showcase-box::before {
+  background: linear-gradient(90deg, #1d4ed8, #0284c7, #eab308, #15803d) !important;
+  height: 3px !important;
+}
+
+.oompa-details h3 {
+  color: #0f172a !important;
+}
+
+.oompa-spec-item {
+  background: #fdfbf7 !important;
+  border: 1px dashed rgba(37, 99, 235, 0.3) !important;
+}
+
+.oompa-spec-title {
+  color: #1d4ed8 !important;
+  font-weight: 700;
+}
+
+.oompa-spec-desc {
+  color: #0f172a !important;
+  font-weight: 600;
+}
+
+.oompa-highlight-banner {
+  background: #f0fdf4 !important;
+  border: 1px solid #86efac !important;
+}
+
+.oompa-highlight-banner strong {
+  color: #15803d !important;
+}
+
+.oompa-badge-overlay {
+  background: #ffffff !important;
+  border: 1px solid #15803d !important;
+  color: #15803d !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 5 Pillars Cards */
+.pillar-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.16) !important;
+}
+
+.pillar-card:hover {
+  border-color: #1d4ed8 !important;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12) !important;
+  transform: translateY(-3px) !important;
+}
+
+.pillar-card h4 {
+  color: #0f172a !important;
+}
+
+.pillar-number {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #93c5fd !important;
+}
+
+.pillar-oompa-badge {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0369a1 !important;
+  font-weight: 600;
+}
+
+/* Student Developer Note: Yellow Notebook Callout */
+.student-dev-box {
+  background: #fffbeb !important;
+  border: 1.5px solid #f59e0b !important;
+  border-left: 5px solid #d97706 !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.1) !important;
+}
+
+.student-dev-icon {
+  background: #fef3c7 !important;
+  border: 1px solid #f59e0b !important;
+  color: #b45309 !important;
+}
+
+.student-dev-content h4 {
+  color: #92400e !important;
+}
+
+.student-dev-content p {
+  color: #78350f !important;
+}
+
+/* Team Profile Cards */
+.team-profile-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.16) !important;
+}
+
+.team-profile-card h4 {
+  color: #0f172a !important;
+}
+
+.profile-avatar {
+  background: #eff6ff !important;
+  border: 1.5px solid #93c5fd !important;
+  color: #1d4ed8 !important;
+}
+
+/* Pipeline Sequence Bar */
+.pipeline-tracker {
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.16) !important;
+}
+
+.tracker-code {
+  color: #0284c7 !important;
+}
+
+.tracker-name {
+  color: #0f172a !important;
+}
+
+.tracker-desc {
+  color: #64748b !important;
+}
+
+.tracker-sep {
+  color: #94a3b8 !important;
+}
+
+/* Architecture Board & Nodes */
+.architecture-board {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(37, 99, 235, 0.25) !important;
+}
+
+.arch-node {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.arch-node .node-id {
+  color: #1d4ed8 !important;
+}
+
+.arch-node .node-name {
+  color: #0f172a !important;
+}
+
+.arch-node .node-sub {
+  color: #64748b !important;
+}
+
+.arch-node.node-highlight {
+  background: #f0fdf4 !important;
+  border-color: #15803d !important;
+}
+
+.arch-edge {
+  color: #2563eb !important;
+  font-weight: 700;
+}
+
+/* Code Snippets */
+.code-snippet, code {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+/* Timeline Cards */
+.timeline-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.16) !important;
+}
+
+.timeline-card h4 {
+  color: #0f172a !important;
+}
+
+.phase-num {
+  color: #1d4ed8 !important;
+}
+
+.timeline-card.active-phase {
+  border-color: #15803d !important;
+  border-left: 4px solid #15803d !important;
+}
+
+.timeline-card.in-dev-phase {
+  border-color: #0284c7 !important;
+  border-left: 4px solid #0284c7 !important;
+}
+
+/* Verification Stats Box */
+.verification-stats-box {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(15, 23, 42, 0.16) !important;
+}
+
+.stat-digit.text-green {
+  color: #15803d !important;
+}
+
+.stat-desc {
+  color: #334155 !important;
+}
+
+.test-notice {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+.test-notice strong {
+  color: #0f172a !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
+  border: 1px solid #1e40af !important;
+  box-shadow: 0 2px 8px rgba(29, 78, 216, 0.25) !important;
+}
+
+.btn-primary:hover {
+  background: #1e40af !important;
+}
+
+.btn-secondary {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1.5px solid #0f172a !important;
+}
+
+.btn-secondary:hover {
+  background: #f8fafc !important;
+}
+
+.btn-outline {
+  border-color: #0f172a !important;
+  color: #0f172a !important;
+  background: #ffffff !important;
+}
+
+/* CTA & Footer */
+.section-cta {
+  background: #fefce8 !important;
+  border-top: 2px solid #eab308 !important;
+  border-bottom: 2px solid #eab308 !important;
+}
+
+.cta-headline {
+  color: #0f172a !important;
+}
+
+.cta-lead {
+  color: #334155 !important;
+}
+
+.contact-meta-info {
+  color: #475569 !important;
+}
+
+.contact-meta-info strong {
+  color: #0f172a !important;
+}
+
+.site-footer {
+  background: #fbf7ee !important;
+  border-top: 2px solid rgba(15, 23, 42, 0.12) !important;
+}
+
+.footer-brand-title {
+  color: #0f172a !important;
+}
+
+.footer-brand-sub {
+  color: #64748b !important;
+}
+
+.footer-links-group a {
+  color: #334155 !important;
+}
+
+.footer-links-group a:hover {
+  color: #1d4ed8 !important;
+}
+
+.footer-legal p {
+  color: #64748b !important;
 }
