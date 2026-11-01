@@ -30,11 +30,11 @@
 
       <nav class="main-nav" id="mainNav">
         <a href="#story" class="nav-link">Genesis</a>
-        <a href="#problem" class="nav-link">The Core Problem</a>
-        <a href="#framework" class="nav-link">Architecture</a>
+        <a href="#problem" class="nav-link">Problem</a>
+        <a href="#oompa" class="nav-link text-green">OOMPA Prototype</a>
+        <a href="#pillars" class="nav-link">5 Pillars</a>
         <a href="#interactive-demo" class="nav-link">Simulator</a>
         <a href="#achievements" class="nav-link">Validation</a>
-        <a href="#learnings" class="nav-link">Learnings</a>
         <a href="#roadmap" class="nav-link">Roadmap</a>
         <a href="#team" class="nav-link">Team</a>
       </nav>
@@ -323,6 +323,131 @@
             </div>
             <h4>Complex Road Realities</h4>
             <p>Mixed multi-modal traffic, unmarked road shoulders, potholes, glare, and erratic lane changes demand resilient reasoning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3.5 Physical Hardware Prototype: OOMPA -->
+    <section class="section" id="oompa">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="kicker text-green">PHYSICAL EDGE HARDWARE</span>
+          <h2 class="title-primary">Meet "OOMPA": Our Physical Edge ADAS Testbed</h2>
+          <p class="lead-paragraph mx-auto">
+            From software simulation to bare-metal silicon. OOMPA is our custom 1:10 autonomous robotic vehicle running SAFAR's real-time safety reflex loop directly on edge microcontrollers.
+          </p>
+        </div>
+
+        <div class="oompa-showcase-box mt-6">
+          <div class="oompa-grid">
+            <div class="oompa-visual-wrap">
+              <img src="assets/oompa-prototype.png" alt="OOMPA Physical Robot Car Prototype" class="oompa-img" />
+              <div class="oompa-badge-overlay">
+                <span class="oompa-badge-pulse"></span>
+                <span>OOMPA V2.1 ACTIVE</span>
+              </div>
+            </div>
+
+            <div class="oompa-details">
+              <div class="eyebrow-chip" style="margin-bottom: 12px; display: inline-block;">BARE-METAL EMBEDDED ARCHITECTURE</div>
+              <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 12px; font-weight: 700;">Sub-10ms Acoustic Emergency Reflex</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                OOMPA proves that high-performance vehicle collision avoidance does not require ₹2,00,000 LiDAR arrays or high-wattage computing rigs. Built for under ₹1,200, OOMPA executes continuous forward acoustic radar scanning, deterministic hazard filtering, and microsecond motor cutoff.
+              </p>
+
+              <div class="oompa-specs-grid">
+                <div class="oompa-spec-item">
+                  <div class="oompa-spec-title">Edge Compute Unit</div>
+                  <div class="oompa-spec-desc">ESP32 Dual-Core Xtensa LX6 @ 240 MHz (Zero-lag firmware)</div>
+                </div>
+                <div class="oompa-spec-item">
+                  <div class="oompa-spec-title">Forward Radar</div>
+                  <div class="oompa-spec-desc">HC-SR04 Ultrasonic Sonar Array (&lt;10ms reflex loop)</div>
+                </div>
+                <div class="oompa-spec-item">
+                  <div class="oompa-spec-title">VCU Actuation</div>
+                  <div class="oompa-spec-desc">L298N Dual H-Bridge with Directional Escape Logic</div>
+                </div>
+                <div class="oompa-spec-item">
+                  <div class="oompa-spec-title">Powertrain</div>
+                  <div class="oompa-spec-desc">2S 18650 Li-ion 7.4V High-Discharge Power Core</div>
+                </div>
+              </div>
+
+              <div class="oompa-highlight-banner">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                <span style="font-size: 0.9rem; color: var(--text-main);">
+                  <strong>Validated Test Benchmark:</strong> Autonomous Emergency Braking (AEB) tested and verified stopping cleanly at <strong>20.0 cm</strong> from obstacles with 100% target persistence.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. The 5 Pillars of SAFAR Architecture -->
+    <section class="section bg-slate" id="pillars">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="kicker text-cyan">MODULAR ARCHITECTURE</span>
+          <h2 class="title-primary">The 5 Pillars of SAFAR</h2>
+          <p class="lead-paragraph">
+            How SAFAR breaks down perception, geometry, physics, and decision-making into five decoupled, deterministic layers — fully implemented on the OOMPA prototype.
+          </p>
+        </div>
+
+        <div class="five-pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-number">PILLAR 01</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h4>Numerical Perception</h4>
+            <p>Ingests direct raw acoustic pings (2 cm – 350 cm) and validates transducer echo timing without reliance on heavy neural models for primary emergency stops.</p>
+            <div class="pillar-oompa-badge">OOMPA: Bare-metal sonar driver</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-number">PILLAR 02</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h4>Spatial Corridor & Persistence</h4>
+            <p>Projects vehicle width into an active forward corridor. Employs <em>Target Persistence Memory</em> so motor vibration echo drops never falsely clear a hazard lock.</p>
+            <div class="pillar-oompa-badge">OOMPA: Dropout blind-spot shield</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-number">PILLAR 03</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4>Physics & Kinematics Engine</h4>
+            <p>Calculates dynamic stopping distances and Time-to-Collision (TTC) using relative closing velocities to trigger staged alerts before physical contact.</p>
+            <div class="pillar-oompa-badge">OOMPA: 20cm dynamic braking margin</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-number">PILLAR 04</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h4>Safety Arbitration State Machine</h4>
+            <p>Deterministic 4-level arbiter: Clear → Caution → Imminent → AEB Stop. Implements <em>Directional Escape Freedom</em> — reverse and steering are never blocked.</p>
+            <div class="pillar-oompa-badge">OOMPA: Non-locking escape logic</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-number">PILLAR 05</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+            </div>
+            <h4>VCU Dispatch & Cockpit Telemetry</h4>
+            <p>Dispatches microsecond all-channel motor cuts, executes 1.2s torque crawl pulses for door thresholds, and broadcasts live JSON telemetry via Wi-Fi SoftAP.</p>
+            <div class="pillar-oompa-badge">OOMPA: Web HUD at 192.168.4.1</div>
           </div>
         </div>
       </div>
@@ -793,6 +918,23 @@
             <p>Run real-world telemetry pilot with regional cab and delivery fleets to evaluate safety metrics, driver fatigue, and passenger trust.</p>
             <div class="phase-progress"><div class="progress-fill" style="width: 0%;"></div></div>
           </div>
+
+        <!-- Student Developer Velocity Transparency -->
+        <div class="student-dev-box">
+          <div class="student-dev-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="student-dev-content">
+            <h4>Student Engineering & Development Velocity</h4>
+            <p>
+              SAFAR and the OOMPA testbed are being actively built by undergraduate student developers. While our physical hardware iterations move steadily alongside rigorous academic coursework and exam commitments, we are committed to building authentic, verified engineering solutions from first principles.
+            </p>
+            <div class="roadmap-subpoints mt-3" style="font-size: 0.85rem; color: var(--brand-cyan); font-family: var(--font-mono); margin-top: 8px;">
+              ⚡ UPCOMING FOR OOMPA: Onboard ESP32-CAM Vision Module • Ultrasonic + YOLO Multi-Sensor Fusion • Integrated USB-C Power BMS
+            </div>
+          </div>
+        </div>
+
         </div>
       </div>
     </section>
@@ -975,6 +1117,14 @@
             <h4>Yazdaan Ansari</h4>
             <p class="profile-role">Student Engineering Team</p>
           </div>
+
+          <div class="team-profile-card">
+            <div class="profile-avatar">
+              <span class="avatar-initials">NK</span>
+            </div>
+            <h4>Nitin Kashyap</h4>
+            <p class="profile-role">Student Engineering Team</p>
+          </div>
         </div>
 
         <div class="team-links-bar mt-6">
@@ -1037,7 +1187,7 @@
       </div>
 
       <div class="footer-legal">
-        <p>© 2026 SAFAR. Built by Saksham Dixit, Krish Agarwal & Yazdaan Ansari.</p>
+        <p>© 2026 SAFAR. Built by Saksham Dixit, Krish Agarwal, Yazdaan Ansari & Nitin Kashyap.</p>
       </div>
     </div>
   </footer>
