@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
-  <link rel="stylesheet" href="styles.css?v=blue_safar_bold_v5" />
+  <link rel="stylesheet" href="styles.css?v=fixes_v6" />
 </head>
 <body class="theme-white-grid">
 
@@ -67,8 +67,10 @@
           <span class="eyebrow-state">Software v1.0 Validated</span>
         </div>
 
-        <div class="hero-branding">
-          <img src="assets/safar-logo.png" alt="SAFAR Emblem" class="hero-shield-logo" />
+        <div class="hero-branding-wrapper" style="width: 100%; display: flex; justify-content: center; align-items: center; margin: 12px 0;">
+          <div class="hero-branding">
+            <img src="assets/safar-logo.png" alt="SAFAR Emblem" class="hero-shield-logo" />
+          </div>
         </div>
 
         <h1 class="hero-headline">SAFAR</h1>
@@ -138,7 +140,7 @@
         <div class="story-layout">
           <div class="story-article">
             <div class="pull-quote">
-              <span class="quote-mark">“</span>
+              
               <p>Can meaningful road-hazard awareness be built as an affordable, modular framework for vehicles that don't have factory ADAS?</p>
             </div>
             
@@ -711,10 +713,7 @@
               <div class="stat-digit text-yellow">2</div>
               <div class="stat-desc">Skipped (Optional CARLA Backend)</div>
             </div>
-            <div class="stat-unit">
-              <div class="stat-digit text-green">0</div>
-              <div class="stat-desc">Failures / Regressions</div>
-            </div>
+
           </div>
           <div class="test-notice">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>

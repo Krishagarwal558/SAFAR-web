@@ -3338,3 +3338,89 @@ h3, h4, h5, h6 {
   color: #000000 !important;
   font-weight: 900 !important;
 }
+
+
+
+/* ==========================================================================
+   USER FIXES: CENTERED LOGO, 2-COLUMN STATS, CLEAN PULL-QUOTE
+   ========================================================================== */
+
+/* Center hero branding container completely */
+.hero-branding-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 16px auto !important;
+}
+
+.hero-branding {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.hero-shield-logo {
+  display: block !important;
+  margin: 0 auto !important;
+  width: 90px !important;
+  height: 90px !important;
+}
+
+/* Remove floating quote mark and give pull quote a clean, modern frame */
+.quote-mark {
+  display: none !important;
+}
+
+.pull-quote {
+  background: #f8fafc !important;
+  border: 2px solid #0f172a !important;
+  border-left: 6px solid #2563eb !important;
+  border-radius: 10px !important;
+  padding: 22px 26px !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  margin: 24px 0 !important;
+  position: relative !important;
+}
+
+.pull-quote p {
+  color: #0f172a !important;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+/* Balance the 2 remaining stats units in a centered 2-column grid */
+.stats-row {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 36px !important;
+  max-width: 650px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.stat-unit {
+  text-align: center !important;
+  padding: 12px !important;
+}
+
+.stat-digit {
+  font-size: 4rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
+}
+
+.stat-desc {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+}
