@@ -3089,3 +3089,252 @@ h3, h4, h5, h6 {
 .footer-legal p {
   color: #64748b !important;
 }
+
+
+
+/* ==========================================================================
+   BLUE SAFAR THEME + ULTRA-BOLD HIGH-CONTRAST READABILITY
+   ========================================================================== */
+
+/* 1. HERO SAFAR IN BOLD BLUE THEME WITH CRISP WHITE TEXT */
+.hero-headline {
+  display: inline-block !important;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0284c7 100%) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-size: 5rem !important;
+  font-weight: 900 !important;
+  padding: 14px 52px !important;
+  border-radius: 16px !important;
+  border: 3.5px solid #0f172a !important;
+  box-shadow: 6px 6px 0px #0f172a !important;
+  letter-spacing: 4px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  margin: 18px 0 24px !important;
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+}
+
+/* Hero Shield Logo Container on White Grid */
+.hero-branding {
+  display: inline-block !important;
+  background: #ffffff !important;
+  padding: 14px !important;
+  border-radius: 20px !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  margin-bottom: 8px !important;
+}
+
+.hero-shield-logo {
+  filter: drop-shadow(0 2px 8px rgba(2, 132, 199, 0.4)) !important;
+}
+
+/* 2. MAKE ALL BODY & CARD TEXT BOLD, CRISP, AND 100% READABLE */
+body, p, li, span, td, div {
+  color: #0f172a;
+}
+
+p {
+  font-weight: 600 !important;
+  color: #0f172a !important;
+  line-height: 1.65 !important;
+}
+
+.lead-paragraph, .hero-lead {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+  line-height: 1.7 !important;
+}
+
+/* 3. FIX INVISIBLE PULL-QUOTE (IMAGE 2) */
+.pull-quote {
+  background: #f8fafc !important;
+  border: 2px solid #0f172a !important;
+  border-left: 6px solid #2563eb !important;
+  border-radius: 10px !important;
+  padding: 24px 28px !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  margin: 28px 0 !important;
+}
+
+.pull-quote p {
+  color: #0f172a !important;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+  line-height: 1.5 !important;
+}
+
+.quote-mark {
+  color: #2563eb !important;
+  font-size: 3.5rem !important;
+  opacity: 0.4 !important;
+}
+
+/* 4. FIX INVISIBLE YELLOW-ON-WHITE DISCLAIMER CALLOUT (IMAGE 3) */
+.disclaimer-callout {
+  background: #fef08a !important;
+  border: 2.5px solid #0f172a !important;
+  border-radius: 12px !important;
+  box-shadow: 5px 5px 0px #0f172a !important;
+  padding: 22px 28px !important;
+}
+
+.disclaimer-text {
+  color: #0f172a !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  line-height: 1.6 !important;
+}
+
+.disclaimer-text strong {
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
+
+/* 5. FIX INVISIBLE TIMELINE STEPPER TEXT (IMAGE 2) */
+.evolution-stepper {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 5px 5px 0px #0f172a !important;
+  border-radius: 14px !important;
+}
+
+.stepper-header {
+  border-bottom: 2px solid #0f172a !important;
+}
+
+.stepper-badge {
+  color: #0284c7 !important;
+  font-weight: 900 !important;
+  font-size: 0.95rem !important;
+}
+
+.stepper-meta {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+}
+
+.step-desc, .step-title, .step-item p, .step-item div {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.55 !important;
+}
+
+.step-dot {
+  background: #2563eb !important;
+  border: 2px solid #0f172a !important;
+}
+
+.step-item::before {
+  background: #0f172a !important;
+}
+
+/* 6. BOLD ALL CARD HEADINGS, LISTS & DETAILS */
+.clean-list li, .story-card li, .problem-card li, .achievement-card li, .limit-list li {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 8px !important;
+}
+
+.clean-list li::before {
+  color: #2563eb !important;
+  font-weight: 900 !important;
+}
+
+h3, h4, h5, h6 {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+
+.title-primary {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+
+/* OOMPA Specs & Details Bolder */
+.oompa-spec-title {
+  color: #1d4ed8 !important;
+  font-weight: 900 !important;
+  font-size: 0.8rem !important;
+}
+
+.oompa-spec-desc {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  font-size: 0.95rem !important;
+}
+
+.oompa-highlight-banner span {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+}
+
+.oompa-highlight-banner strong {
+  color: #15803d !important;
+  font-weight: 900 !important;
+}
+
+/* 5 Pillars Bolder */
+.pillar-card h4 {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+  font-size: 1.2rem !important;
+}
+
+.pillar-card p {
+  color: #0f172a !important;
+  font-weight: 600 !important;
+  font-size: 0.92rem !important;
+}
+
+.pillar-oompa-badge {
+  color: #1d4ed8 !important;
+  font-weight: 900 !important;
+  font-size: 0.85rem !important;
+}
+
+/* Thesis Quote Card */
+.thesis-quote-card {
+  background: #ffffff !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 6px 6px 0px #0f172a !important;
+  padding: 36px 32px !important;
+  border-radius: 16px !important;
+}
+
+.thesis-quote-card p {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  font-size: 1.35rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Verification Stats */
+.stat-digit {
+  font-weight: 900 !important;
+}
+
+.stat-desc {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.test-notice {
+  background: #f8fafc !important;
+  border: 2px solid #0f172a !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.test-notice strong {
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
