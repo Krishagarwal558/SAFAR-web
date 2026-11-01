@@ -2523,3 +2523,569 @@ h1, h2, h3, h4, h5, h6,
 .footer-legal p {
   color: #64748b !important;
 }
+
+
+/* ==========================================================================
+   SAFAR — WHITE BACKGROUND WITH GRIDS & YELLOW BLOCK HEADINGS THEME
+   Appealing Modern Neo-Engineering Web Aesthetic
+   ========================================================================== */
+
+:root {
+  --bg-base: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-raised: #ffffff;
+  --bg-surface-hover: #fefce8;
+  --bg-card: #ffffff;
+
+  --border-subtle: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-accent: #0f172a;
+  --border-cyan: #0284c7;
+
+  --brand-yellow: #fde047;
+  --brand-yellow-bright: #facc15;
+  --brand-yellow-dark: #ca8a04;
+  --brand-green: #15803d;
+  --brand-cyan: #0284c7;
+  --brand-red: #ef4444;
+
+  --text-main: #0f172a;
+  --text-muted: #334155;
+  --text-dim: #64748b;
+  --text-dark: #000000;
+
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}
+
+/* Force Whole Page Background to White with Crisp Blueprint/Notebook Grid */
+html, body {
+  background-color: #ffffff !important;
+  background-image: 
+    linear-gradient(#e5e7eb 1.5px, transparent 1.5px),
+    linear-gradient(90deg, #e5e7eb 1.5px, transparent 1.5px) !important;
+  background-size: 32px 32px !important;
+  background-position: -1px -1px !important;
+  color: #0f172a !important;
+  overflow-x: hidden;
+}
+
+/* Kill all dark background overlays from hero and sections */
+.hero-canvas-bg, .grid-perspective, .glow-radial, .ray-lines {
+  display: none !important;
+}
+
+.hero-section {
+  background: transparent !important;
+  padding: 80px 0 90px !important;
+  min-height: auto !important;
+}
+
+/* ==========================================================================
+   HEADINGS IN VIBRANT YELLOW BLOCKS
+   ========================================================================== */
+
+/* Main Hero Heading in a Bold Yellow Block */
+.hero-headline {
+  display: inline-block !important;
+  background-color: #fde047 !important;
+  color: #0f172a !important;
+  font-size: 4.8rem !important;
+  font-weight: 900 !important;
+  padding: 10px 42px !important;
+  border-radius: 16px !important;
+  border: 3.5px solid #0f172a !important;
+  box-shadow: 6px 6px 0px #0f172a !important;
+  letter-spacing: 3px !important;
+  margin: 18px 0 24px !important;
+  -webkit-text-fill-color: #0f172a !important;
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+  text-shadow: none !important;
+}
+
+/* Section Titles Highlighted as Yellow Blocks */
+.title-primary, .cta-headline {
+  display: inline-block !important;
+  background-color: #fef08a !important;
+  color: #0f172a !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  padding: 8px 24px !important;
+  border-radius: 10px !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  margin-bottom: 18px !important;
+  line-height: 1.35 !important;
+  text-align: left;
+}
+
+.text-center .title-primary {
+  text-align: center;
+}
+
+/* Section Kickers as High-Contrast Pill Badges */
+.kicker {
+  display: inline-block !important;
+  background: #0f172a !important;
+  color: #fde047 !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  padding: 5px 14px !important;
+  border-radius: 6px !important;
+  margin-bottom: 12px !important;
+  border: 1px solid #0f172a !important;
+}
+
+.kicker.text-green, .kicker.text-cyan {
+  color: #fde047 !important;
+}
+
+/* Subheadings & Card Headers */
+h3, h4, h5, h6 {
+  color: #0f172a !important;
+}
+
+.hero-subheadline {
+  color: #0284c7 !important;
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 16px !important;
+}
+
+.hero-lead, .lead-paragraph {
+  color: #334155 !important;
+  font-size: 1.15rem !important;
+  line-height: 1.65 !important;
+}
+
+.eyebrow-chip {
+  background: #fde047 !important;
+  border: 2px solid #0f172a !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  box-shadow: 2px 2px 0px #0f172a !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+}
+
+.eyebrow-state {
+  color: #15803d !important;
+  font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR (WHITE GLASS WITH SHARP BORDER)
+   ========================================================================== */
+.site-header {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-bottom: 2.5px solid #0f172a !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.brand-title {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.brand-tag {
+  color: #0284c7 !important;
+  font-weight: 700 !important;
+}
+
+.nav-link {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-link:hover {
+  background: #fde047 !important;
+  color: #0f172a !important;
+  border-radius: 6px !important;
+}
+
+.nav-gh-btn {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 3px 3px 0px #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.nav-gh-btn:hover {
+  background: #fde047 !important;
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+}
+
+/* ==========================================================================
+   CARDS & PANELS: CLEAN WHITE WITH NEO-BRUTALIST TACTILE APPEAL
+   ========================================================================== */
+.card,
+.story-card,
+.problem-card,
+.module-spec-card,
+.achievement-card,
+.timeline-card,
+.team-profile-card,
+.pillar-card,
+.oompa-showcase-box,
+.expansion-card,
+.business-card,
+.insight-box,
+.architecture-board,
+.verification-stats-box,
+.pipeline-tracker,
+.business-equation-card,
+.spec-sheet {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  border-radius: 14px !important;
+  box-shadow: 5px 5px 0px #0f172a !important;
+  transition: all 0.2s ease !important;
+  color: #0f172a !important;
+}
+
+.card:hover,
+.pillar-card:hover,
+.team-profile-card:hover,
+.timeline-card:hover,
+.achievement-card:hover,
+.module-spec-card:hover {
+  transform: translate(-3px, -3px) !important;
+  box-shadow: 8px 8px 0px #0f172a !important;
+}
+
+.card-tag {
+  background: #fde047 !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  border: 1px solid #0f172a !important;
+}
+
+/* Remove dark section alternating bands */
+.bg-slate {
+  background-color: transparent !important;
+  border-top: 2px dashed #cbd5e1 !important;
+  border-bottom: 2px dashed #cbd5e1 !important;
+}
+
+/* ==========================================================================
+   OOMPA HARDWARE PROTOTYPE SHOWCASE
+   ========================================================================== */
+.oompa-showcase-box {
+  background: #ffffff !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 7px 7px 0px #0f172a !important;
+  border-radius: 18px !important;
+  padding: 36px !important;
+}
+
+.oompa-showcase-box::before {
+  background: linear-gradient(90deg, #fde047, #facc15, #0284c7) !important;
+  height: 5px !important;
+}
+
+.oompa-visual-wrap {
+  border: 2.5px solid #0f172a !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  overflow: hidden;
+}
+
+.oompa-badge-overlay {
+  background: #fde047 !important;
+  border: 2px solid #0f172a !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  box-shadow: 2px 2px 0px #0f172a !important;
+}
+
+.oompa-badge-pulse {
+  background-color: #15803d !important;
+  box-shadow: 0 0 6px #15803d !important;
+}
+
+.oompa-spec-item {
+  background: #f8fafc !important;
+  border: 1.5px solid #0f172a !important;
+  border-radius: 8px !important;
+  box-shadow: 2px 2px 0px #0f172a !important;
+}
+
+.oompa-spec-title {
+  color: #0284c7 !important;
+  font-weight: 800 !important;
+}
+
+.oompa-spec-desc {
+  color: #0f172a !important;
+  font-weight: 600 !important;
+}
+
+.oompa-highlight-banner {
+  background: #fefce8 !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 3px 3px 0px #0f172a !important;
+  border-radius: 10px !important;
+}
+
+.oompa-highlight-banner strong {
+  color: #15803d !important;
+}
+
+/* ==========================================================================
+   5 PILLARS CARDS
+   ========================================================================== */
+.pillar-card {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+}
+
+.pillar-number {
+  background: #fde047 !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  border: 1.5px solid #0f172a !important;
+  border-radius: 6px !important;
+  padding: 4px 10px !important;
+}
+
+.pillar-oompa-badge {
+  background: #f1f5f9 !important;
+  border: 1.5px solid #0f172a !important;
+  color: #0284c7 !important;
+  font-weight: 700 !important;
+  border-radius: 6px !important;
+}
+
+/* ==========================================================================
+   STUDENT DEVELOPER TRANSPARENCY BOX
+   ========================================================================== */
+.student-dev-box {
+  background: #fef08a !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 5px 5px 0px #0f172a !important;
+  border-radius: 14px !important;
+}
+
+.student-dev-icon {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  color: #0f172a !important;
+  box-shadow: 2px 2px 0px #0f172a !important;
+}
+
+.student-dev-content h4 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.student-dev-content p {
+  color: #1e293b !important;
+  font-weight: 500 !important;
+}
+
+/* ==========================================================================
+   TEAM CARDS
+   ========================================================================== */
+.team-profile-card {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+}
+
+.team-profile-card h4 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.profile-avatar {
+  background: #fde047 !important;
+  border: 2px solid #0f172a !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  box-shadow: 2px 2px 0px #0f172a !important;
+}
+
+/* ==========================================================================
+   BUTTONS: VIBRANT YELLOW & HIGH-CONTRAST BLOCKS
+   ========================================================================== */
+.btn-primary {
+  background: #fde047 !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  border-radius: 8px !important;
+  transition: all 0.15s ease !important;
+}
+
+.btn-primary:hover {
+  background: #facc15 !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0px #0f172a !important;
+}
+
+.btn-secondary {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  border: 2.5px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+  border-radius: 8px !important;
+}
+
+.btn-secondary:hover {
+  background: #f8fafc !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0px #0f172a !important;
+}
+
+.btn-outline {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 3px 3px 0px #0f172a !important;
+  font-weight: 700 !important;
+}
+
+/* Pipeline Sequence Tracker Bar */
+.pipeline-tracker {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+}
+
+.tracker-code {
+  color: #0284c7 !important;
+  font-weight: 800 !important;
+}
+
+.tracker-name {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.tracker-desc {
+  color: #475569 !important;
+}
+
+.tracker-sep {
+  color: #0f172a !important;
+}
+
+/* Architecture Board */
+.architecture-board {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 5px 5px 0px #0f172a !important;
+}
+
+.arch-node {
+  background: #f8fafc !important;
+  border: 1.5px solid #0f172a !important;
+  border-radius: 8px !important;
+  box-shadow: 2px 2px 0px #0f172a !important;
+}
+
+.arch-node .node-id {
+  color: #0284c7 !important;
+  font-weight: 800 !important;
+}
+
+.arch-node .node-name {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.arch-node .node-sub {
+  color: #475569 !important;
+}
+
+.arch-node.node-highlight {
+  background: #fde047 !important;
+  border-color: #0f172a !important;
+}
+
+.arch-edge {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+
+/* Code Snippets */
+.code-snippet, code {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid #94a3b8 !important;
+  font-weight: 600 !important;
+}
+
+/* Stats Box */
+.verification-stats-box {
+  background: #ffffff !important;
+  border: 2px solid #0f172a !important;
+  box-shadow: 4px 4px 0px #0f172a !important;
+}
+
+.stat-digit.text-green {
+  color: #15803d !important;
+  font-weight: 900 !important;
+}
+
+.stat-desc {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+.test-notice {
+  background: #f8fafc !important;
+  border: 1.5px solid #0f172a !important;
+  color: #1e293b !important;
+}
+
+/* CTA Section & Footer */
+.section-cta {
+  background: #fefce8 !important;
+  border-top: 3px solid #0f172a !important;
+  border-bottom: 3px solid #0f172a !important;
+}
+
+.site-footer {
+  background: #ffffff !important;
+  border-top: 3px solid #0f172a !important;
+}
+
+.footer-brand-title {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+
+.footer-brand-sub {
+  color: #475569 !important;
+}
+
+.footer-links-group a {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+.footer-links-group a:hover {
+  background: #fde047 !important;
+}
+
+.footer-legal p {
+  color: #64748b !important;
+}
